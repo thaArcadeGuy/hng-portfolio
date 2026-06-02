@@ -113,6 +113,7 @@ a {
 .services {
   padding: 4.5rem 1.25rem;
   text-align: center;
+  border-bottom: 2px solid #20242F;
 } 
 
 .services > p {
@@ -140,3 +141,72 @@ h2 {
   font-size: 5.75rem;
   font-weight: 400;
 }
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 2px solid #20242F;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-track span {
+  display: inline;
+  margin-right: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 5.75rem;
+  letter-spacing: -0.02em;
+  color: #20242F;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.projects {
+  padding-block: 4.5rem;
+}
+
+.project {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-bottom: 2px solid #20242F
+}
+
+.project-header {
+  font-size: smaller;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-name {
+  font-weight: 600;
+}
+
+.project-stack {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem
+}
+

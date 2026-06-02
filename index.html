@@ -59,6 +59,63 @@
         </div>
       </div>
     </section>
+    <section class="projects-section">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Projects</span>
+          <span>*</span>
+          <span>Projects</span>
+          <span>*</span>
+          <span>Projects</span>
+          <span>*</span>
+          <span>Projects</span>
+          <span>*</span>
+          <span>Projects</span>
+          <span>*</span>
+          <span>Projects</span>
+          <span>*</span>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project">
+          <div class="project-header">
+            <div class="project-name">
+              <p>[ Append-Only Event Store ]</p>
+            </div>
+            <div class="project-stack">
+              <p>[ NodeJS ]</p>
+              <p>[ Express ]</p>
+            </div>
+          </div>
+          <div class="project-brief">
+            <p>This project is a simple event store built with Node.js and Express. Instead of using a traditional database, events are written as JSON objects to an append-only log file called events.log. An in-memory index maps each event ID to its byte offset and length, enabling O(1) reads without scanning the entire file. When the server restarts, it rebuilds the index from the log file.</p>
+          </div>
+          <div class="project-links">
+            <p>[ <a href="https://github.com/thaArcadeGuy/event-store" target="_blank" >GitHub Repo</a> ]</p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-header">
+            <div class="project-name">
+              <p>[ Insighta Labs+ ]</p>
+            </div>
+            <div class="project-stack">
+              <p>[ NodeJS ]</p>
+              <p>[ Express ]</p>
+              <p>[ MongoDB ]</p>
+              <p>[ CommanderJS ]</p>
+            </div>
+          </div>
+          <div class="project-brief">
+            <p>Insighta Labs+ is a demographic intelligence platform that ingests, stores, and queries structured profile data (age, gender, country, probabilities). The system serves multiple user types; analysts exploring patterns, engineers interacting via CLI, and internal teams using a web interface through a unified REST API.</p>
+          </div>
+          <div class="project-links">
+            <p>[ <a href="https://github.com/thaArcadeGuy/persona" target="_blank" >API GitHub Repo</a> ]</p>
+            <p>[ <a href="https://github.com/thaArcadeGuy/insighta-cli" target="_blank" >CLI GitHub Repo</a> ]</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>
