@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="project-brief">
-            <p>This project is a simple event store built with Node.js and Express. Instead of using a traditional database, events are written as JSON objects to an append-only log file called events.log. An in-memory index maps each event ID to its byte offset and length, enabling O(1) reads without scanning the entire file. When the server restarts, it rebuilds the index from the log file.</p>
+            <p>This project is a simple event store built with Node.js and Express. The simple system stores events in an append-only log file instead of a traditional database. It uses an in-memory index for fast lookups and can fully recover its state after a restart by rebuilding the index from the log, demonstrating core concepts used in real-world database systems.</p>
           </div>
           <div class="project-links">
             <p>[ <a href="https://github.com/thaArcadeGuy/event-store" target="_blank" >GitHub Repo</a> ]</p>
@@ -115,7 +115,97 @@
           </div>
         </div>
       </div>
+      <div class="skills-section">
+        <h3>Skills</h3>
+        <div class="skills-marquee-wrapper">
+          <!-- Top marquee → left to right -->
+          <div class="skills-marquee left-to-right">
+            <div class="skills-track">
+              <span>API Design & Integration <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Authentication & Authorization <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Databases <em>[ Insighta Labs+ &  Append-Only Event Store]</em></span>
+              <span>//</span>
+              <span>Large-Scale Data Ingestion <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Low-Level File I/O & Data Structures <em>[ Append-Only Event Store ]</em></span>
+              <span>//</span>
+              <!-- duplicate for seamless loop -->
+              <span>API Design & Integration <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Authentication & Authorization <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Databases <em>[ Insighta Labs+ & Append-Only Event Store]</em></span>
+              <span>//</span>
+              <span>Large-Scale Data Ingestion <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Low-Level File I/O & Data Structures <em>[ Append-Only Event Store ]</em></span>
+            </div>
+          </div>
+
+          <!-- Bottom marquee → right to left -->
+          <div class="skills-marquee right-to-left">
+            <div class="skills-track reverse">
+              <span>Documentation <em>[ Insighta Labs+ Append-Only Event Store ]</em></span>
+              <span>//</span>
+              <span>Query Normalization <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>GitHub OAuth2 + PKCE <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Passport.js <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Low-Level File I/O & Data Structures <em>[ Append-Only Event Store ]</em></span>
+              <span>//</span>
+              <!-- duplicate for seamless loop -->
+              <span>Documentation <em>[ Insighta Labs+ Append-Only Event Store ]</em></span>
+              <span>//</span>
+              <span>Query Normalization <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>GitHub OAuth2 + PKCE <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Passport.js <em>[ Insighta Labs+ ]</em></span>
+              <span>//</span>
+              <span>Low-Level File I/O & Data Structures <em>[ Append-Only Event Store ]</em></span>
+              <span>//</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="featured-project">
+        <h3>Featured Project</h3>
+        <div class="project-container">
+          <div class="fp-brief">
+            <h3>Append-Only Event Store</h3>
+            <p>Append-Only Event Store is a lightweight service that stores events in an append-only log and rebuilds its in-memory index on startup for fast lookups and recovery.</p>
+          </div>
+          <div class="fp-details">
+            <div class="fp-title-answers">
+              <p class="fp-title">Problem Solved</p>
+              <p class="fp-answer">Built a lightweight event store that persists data without a traditional database, ensuring events survive server restarts through an append-only log file.</p>
+            </div>
+            <div class="fp-title-answers">
+              <p class="fp-title">Architecture / Request Flow</p>
+              <p class="fp-answer">Events are appended to events.log and indexed in memory using byte offsets. Reads use the index to jump directly to the event's location in the file, avoiding full-file scans.</p>
+            </div>
+            <div class="fp-title-answers">
+              <p class="fp-title">Key Endpoints</p>
+              <ul>
+                <li>POST /events — Create and store an event.</li>
+                <li>GET /events/:id — Retrieve an event by ID.</li>
+                <li>GET /stats — View event count and log size.</li>
+              </ul>
+            </div>
+            <div class="fp-title-answers">
+              <p class="fp-title">Technical Challenge</p>
+              <p class="fp-answer">Accurately tracking byte offsets and event lengths for direct file reads, especially during startup recovery. Solved by rebuilding the in-memory index from the log file and using UTF-8 byte calculations for every event.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
   </div>
 </body>
 </html>
