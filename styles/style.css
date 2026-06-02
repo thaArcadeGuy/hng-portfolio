@@ -314,3 +314,51 @@ h2 {
     transform: translateX(0%);
   }
 }
+
+.contact {
+  text-align: center;
+  padding: 4.5rem 1.25rem;
+  border-bottom: 2px solid #20242F;
+}
+
+input,
+textarea,
+button {
+  font-size: 1.125rem;
+  width: 100%;
+  margin-bottom: 2.06rem;
+}
+
+input,
+textarea {
+  color: gray;
+  padding: 1rem;
+  border: 2px solid #20242F;
+}
+
+button {
+  border: none;
+  color: white;
+  background: #20242F;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.footer-title {
+  text-align: center; 
+  padding: 4.5rem 1.25rem;
+  border-bottom: 2px solid #20242F;
+}
+footer span {
+  font-size: 6rem;
+}
+
+.footer-title > h2 {
+  line-height: 0rem;
+}
+
+.main-footer div {
+  padding: 2rem;
+  border-bottom: 2px solid #20242F;
+}
+
