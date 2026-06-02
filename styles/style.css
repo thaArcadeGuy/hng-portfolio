@@ -174,12 +174,8 @@ h2 {
   }
 }
 
-.projects {
-  padding-block: 4.5rem;
-}
-
 .project {
-  padding: 1.25rem;
+  padding: 4.5rem 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -219,14 +215,13 @@ h2 {
   border-bottom: 2px solid #20242F;
 }
 
-.featured-project > h3,
-.fp-brief > h3 {
+.featured-project > h3 {
   text-align: center;
 }
 
 .featured-project > h3 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 
@@ -252,6 +247,8 @@ h2 {
 .skills-section > h3 {
   font-size: 3rem;
   text-align: center;
+  margin-block: 2rem;
+  font-weight: 400;
 }
 
 
@@ -407,9 +404,83 @@ footer span {
     font-size: 8rem;
   }
 
+  .project {
+    padding: 5.5rem 2rem;
+  }
+
+  .project-container {
+    padding-inline: 2rem
+  }
+
   .project-header,
   .project-links {
     flex-direction: row;
   }
   
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 16.5rem;
+  }
+
+  h2 {
+    font-size: 13.75rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects > .project:first-child {
+    border-right: 2px solid #20242F;
+  }
+
+  .project-container {
+    display: flex;
+    gap: 9rem;
+  }
+
+  .recflections-brief {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .form-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  form {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .main-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  .main-footer > div:nth-child(2) {
+    border-left: 2px solid #20242F;
+    border-right: 2px solid #20242F;
+  }
+
+  .main-footer > div {
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-footer > div:nth-child(1) {
+    align-items: flex-start
+  }
 }
