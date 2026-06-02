@@ -375,3 +375,41 @@ footer span {
 }
 
 /* tablet devices */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 12rem;
+  }
+
+  .hero-bio {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+  }
+
+  .hero-bio > div {
+    padding: 1.25rem 2rem;
+    
+  }
+
+  .about {
+    border-right: 2px solid #20242F;
+  }
+  
+  .about > p {
+    max-width: 33rem
+  }
+
+  .socials p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 8rem;
+  }
+
+  .project-header,
+  .project-links {
+    flex-direction: row;
+  }
+  
+}
