@@ -109,6 +109,7 @@ header > div:nth-child(2) {
 a {
   color: #20242F;
   text-decoration: none;
+  transition: all 0.3s
 }
 
 .services {
@@ -350,6 +351,18 @@ button {
   background: #20242F;
   padding: 1rem 0.5rem;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s
+}
+
+button:hover {
+  /* color: #20242F; */
+  background: rgb(69, 69, 69);
+  /* border: 1px solid #20242F; */
+}
+
+a:hover {
+  color:#5a5959;
 }
 
 .footer-title {
