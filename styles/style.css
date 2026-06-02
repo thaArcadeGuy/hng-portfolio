@@ -19,6 +19,8 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  color: #20242F;
   /* 4. Increase line-height */
   line-height: 1.5;
   /* 5. Improve text rendering */
@@ -65,7 +67,7 @@ h1 {
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid #20242F;
 }
 
 header > div {
@@ -76,8 +78,8 @@ header > div {
 }
 
 header > div:nth-child(2) {
-  border-left: 2px solid grey;
-  border-right: 2px solid grey;
+  border-left: 2px solid #20242F;
+  border-right: 2px solid #20242F;
 }
 
 .hero {
@@ -95,13 +97,46 @@ header > div:nth-child(2) {
 }
 
 .hero-bio > div {
-  padding: 1rem;
-  border-bottom: 2px solid grey;
+  padding: 1.25rem;
+  border-bottom: 2px solid #20242F;
+}
+
+.socials p {
+  font-size: 0.875rem;
 }
 
 a {
-  color: black;
+  color: #20242F;
   text-decoration: none;
 }
 
+.services {
+  padding: 4.5rem 1.25rem;
+  text-align: center;
+} 
 
+.services > p {
+  font-size: 1.25rem;
+}
+
+.category {
+  margin-block: 1rem;
+}
+
+
+.sub-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sub-category > p {
+  font-size: 0.875rem;
+}
+
+h2 {
+  font-size: 5.75rem;
+  font-weight: 400;
+}
