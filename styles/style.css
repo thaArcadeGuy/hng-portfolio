@@ -355,6 +355,11 @@ button {
   transition: all 0.3s
 }
 
+.form-status-message {
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+}
+
 button:hover {
   /* color: #20242F; */
   background: rgb(69, 69, 69);
